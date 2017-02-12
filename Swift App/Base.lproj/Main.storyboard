@@ -22,16 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ixd-Qk-8KW">
-                                <rect key="frame" x="142.5" y="40" width="90.5" height="20.5"/>
+                                <rect key="frame" x="160" y="40" width="56" height="20.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JPz-cH-1s6">
-                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="20.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JwE-ca-BgY">
-                                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO5-45-QfQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Johnny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO5-45-QfQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="56" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -43,32 +43,47 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCN-TR-gTk">
-                                <rect key="frame" x="157.5" y="70.5" width="60" height="30"/>
+                                <rect key="frame" x="158" y="70.5" width="60" height="30"/>
                                 <state key="normal" title="Push Me"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cA2-FF-zK6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Op0-W8-wdF">
-                                <rect key="frame" x="144.5" y="110.5" width="86" height="30"/>
-                                <state key="normal" title="Push me too"/>
-                                <connections>
-                                    <action selector="tapButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZV3-LZ-cJh"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEo-HD-7Z2">
+                                <rect key="frame" x="137.5" y="120.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6DK-0T-8Ev"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBu-w7-Zth">
+                                <rect key="frame" x="137.5" y="170.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="uM4-Lz-ikx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ixd-Qk-8KW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0x2-FD-ZRA"/>
                             <constraint firstItem="mCN-TR-gTk" firstAttribute="top" secondItem="CO5-45-QfQ" secondAttribute="bottom" constant="10" id="3sp-FJ-Tme"/>
                             <constraint firstItem="ixd-Qk-8KW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="C7Y-8S-obx"/>
+                            <constraint firstItem="ZBu-w7-Zth" firstAttribute="top" secondItem="KEo-HD-7Z2" secondAttribute="bottom" constant="20" id="Rx6-cY-MLH"/>
                             <constraint firstItem="mCN-TR-gTk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xqw-Cv-pgk"/>
-                            <constraint firstItem="Op0-W8-wdF" firstAttribute="top" secondItem="mCN-TR-gTk" secondAttribute="bottom" constant="10" id="hvQ-wR-ldn"/>
-                            <constraint firstItem="Op0-W8-wdF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nSF-MF-8bv"/>
+                            <constraint firstItem="KEo-HD-7Z2" firstAttribute="top" secondItem="mCN-TR-gTk" secondAttribute="bottom" constant="20" id="iGj-2r-xWj"/>
+                            <constraint firstItem="ZBu-w7-Zth" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lC4-Ba-NWZ"/>
+                            <constraint firstItem="KEo-HD-7Z2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rFU-xa-WR0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="CO5-45-QfQ" id="rCf-uJ-71c"/>
+                        <outlet property="text1" destination="KEo-HD-7Z2" id="2Un-gj-SGq"/>
+                        <outlet property="text2" destination="ZBu-w7-Zth" id="PAi-qY-rNR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
